@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden; /* Удаление !important для тестирования */
+            overflow: hidden; /* Запретить прокрутку на уровне всего документа */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,7 +22,6 @@
             width: 100%;
             height: 100%;
             z-index: 9999;
-            pointer-events: none; /* Добавлено */
         }
         .call-button {
             display: inline-flex;
@@ -36,7 +35,6 @@
             border-radius: 17px;
             transition: background-color 0.3s, border-color 0.3s;
             font-weight: bold;
-            pointer-events: auto; /* Добавлено */
         }
         .call-button:hover {
             background-color: #f0f0f0;
